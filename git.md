@@ -7,6 +7,8 @@
 | `git init`        | Start a new repo       |
 | `git clone <url>` | Clone an existing repo |
 
+---
+
 ## Prepare to Commit
 
 | Command                  | Discription                                         |
@@ -21,6 +23,8 @@
 | `git reset`              | Unstage everything                                  |
 | `git status`             | Check what has been added                           |
 
+---
+
 ## Make Commits
 
 | Command                    | Discription                                           |
@@ -28,6 +32,8 @@
 | `git commit`               | Make a commit (and open text editor to write message) |
 | `git commit -m 'message'`  | Make a commit                                         |
 | `git commit -am 'message'` | Commit all unstaged changes                           |
+
+---
 
 ## Move Between Branches
 
@@ -40,6 +46,8 @@
 | `git branch -d <name>`                             | Delete a branch                             |
 | `git branch -D <name>`                             | Force delete a branch                       |
 
+---
+
 ## Diff Staged/Unstaged Changes
 
 | Command             | Discription                          |
@@ -47,6 +55,8 @@
 | `git diff HEAD`     | Diff all staged and unstaged changes |
 | `git diff --staged` | Diff just staged changes             |
 | `git diff`          | Diff just unstaged changes           |
+
+---
 
 ## Diff Commits
 
@@ -58,6 +68,8 @@
 | `git diff <commit> --stat`   | Show a summary of a diff                  |
 | `git show <commit> --stat`   | Show a summary of a diff                  |
 
+---
+
 ## Discard Changes
 
 | Command                                                                | Discription                                        |
@@ -68,6 +80,8 @@
 | `git clean`                                                            | Delete untracked files                             |
 | `git stash`                                                            | 'Stash' all staged and unstaged changes            |
 
+---
+
 ## Edit History
 
 | Command                                                   | Discription                                                     |
@@ -76,6 +90,8 @@
 | `git rebase -i HEAD~6`                                    | Squash the last 5 commits into one                              |
 | `git reflog BRANCHNAME`, then `git reset --hard <commit>` | Undo a failed rebase                                            |
 | `git commit --amend`                                      | Change a commit message (or add a file you forgot)              |
+
+---
 
 ## Code Archaeology
 
@@ -86,6 +102,8 @@
 | `git log --follow <file>`                                     | Show every commit that modified a file, including before it was renamed |
 | `git log -G banana`                                           | Find every commit that added or removed some text                       |
 | `git blame <file>`                                            | Show who last changed each line of a file                               |
+
+---
 
 ## Combine Diverged Branches
 
@@ -98,6 +116,8 @@ git rebase main
 
 ![Combine Diverged Branches](./img/Combine_with_rebase.png)
 
+---
+
 **Combine with merge**
 
 ```
@@ -106,6 +126,8 @@ git merge banana
 ```
 
 ![Combine with merge](./img/Combine_with_merge.png)
+
+---
 
 **Combine with squash merge**
 
@@ -117,6 +139,8 @@ git commit
 
 ![Combine with squash merge](./img/Combine_with_squash_merge.png)
 
+---
+
 **Bring a branch up to date with another branch (aka "fast-forward merge")**
 
 ```
@@ -126,6 +150,8 @@ git merge banana
 
 ![Fast-forward merge](./img/Fast_forward_merge.png)
 
+---
+
 **Copy one commit onto the current branch**
 
 ```
@@ -134,17 +160,23 @@ git cherry-pick <commit>
 
 ![Copy one commit onto the current branch](./img/Copy_one_commit_onto_the_current_branch.png)
 
+---
+
 ## Restore an Old File
 
 | Command                                                                  | Discription                                   |
 | ------------------------------------------------------------------------ | --------------------------------------------- |
 | `git checkout <commit> <file>` OR `git restore <file> --source <commit>` | Get the version of a file from another commit |
 
+---
+
 ## Add a Remote
 
 | Command                       | Discription |
 | ----------------------------- | ----------- |
 | `git remote add <name> <url>` |             |
+
+---
 
 ## Push Changes
 
@@ -156,6 +188,8 @@ git cherry-pick <commit>
 | `git push --force-with-lease` | Force push                                              |
 | `git push --tags`             | Push tags                                               |
 
+---
+
 ## Pull Changes
 
 | Command                              | Discription                                           |
@@ -163,6 +197,8 @@ git cherry-pick <commit>
 | `git fetch origin main`              | Fetch changes (but don't change any local branches)   |
 | `git pull --rebase`                  | Fetch changes and then rebase current branch          |
 | `git pull origin main` OR `git pull` | Fetch changes and then merge them into current branch |
+
+---
 
 ## Configure Git
 
@@ -173,6 +209,8 @@ git cherry-pick <commit>
 | `git config alias.st status`       | Add an alias                    |
 | `man git-config`                   | See all possible config options |
 
+---
+
 ## Important Files
 
 | Command        | Discription             |
@@ -180,3 +218,7 @@ git cherry-pick <commit>
 | `.git/config`  | Local git config        |
 | `~/.gitconfig` | Global git config       |
 | `.gitignore`   | List of files to ignore |
+
+---
+
+## Notes
