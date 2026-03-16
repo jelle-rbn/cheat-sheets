@@ -11,6 +11,8 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 | `vagrant init`           | Initialize Vagrant with a Vagrantfile and ./.vagrant directory, using no specified base image. Before you can do vagrant up, you'll need to specify a base image in the Vagrantfile |
 | `vagrant init <boxpath>` | -- Initialize Vagrant with a specific box. To find a box, go to the [public Vagrant box catalog](https://app.vagrantup.com/boxes/search)                                            |
 
+---
+
 ## Starting a VM
 
 | Command                      | Discription                                                               |
@@ -21,12 +23,16 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 | `vagrant reload`             | Restarts vagrant machine, loads new Vagrantfile configuration             |
 | `vagrant reload --provision` | Restart the virtual machine and force provisioning                        |
 
+---
+
 ## Getting into a VM
 
 | Command                 | Discription                                                                                                 |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------- |
 | `vagrant ssh`           | Connects to machine via SSH                                                                                 |
 | `vagrant ssh <boxname>` | If you give your box a name in your Vagrantfile, you can ssh into it with boxname. Works from any directory |
+
+---
 
 ## Stopping a VM
 
@@ -35,12 +41,16 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 | `vagrant halt`    | Stops the vagrant machine                    |
 | `vagrant suspend` | Suspends a virtual machine (remembers state) |
 
+---
+
 ## Cleaning Up a VM
 
 | Command              | Discription                                         |
 | -------------------- | --------------------------------------------------- |
 | `vagrant destroy`    | Stops and deletes all traces of the vagrant machine |
 | `vagrant destroy -f` | Same as above, without confirmation                 |
+
+---
 
 ## Boxes
 
@@ -52,11 +62,15 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 | `vagrant box remove <name>`    | Deletes a box from the machine                      |
 | `vagrant package`              | Packages a running virtualbox env in a reusable box |
 
+---
+
 ## Saving Progress
 
 | Command                                            | Discription                                                                             |
 | -------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | `vagrant snapshot save [options] [vm-name] <name>` | vm-name is often `default`. Allows to save so that rollback at a later time is possible |
+
+---
 
 ## Tips
 
@@ -69,4 +83,8 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 | `vagrant provision --debug`                   | Use the debug flag to increase the verbosity of the output           |
 | `vagrant up --provision \| tee provision.log` | Runs `vagrant up`, forces provisioning and logs all output to a file |
 
+---
+
 ## Notes
+
+- [Hashicorp - Vagrant](https://developer.hashicorp.com/vagrant])
