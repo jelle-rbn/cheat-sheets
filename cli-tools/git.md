@@ -1,5 +1,26 @@
 # Git Cheat Sheet
 
+**Table of contents**
+
+- [Getting Started](#getting-started)
+- [Prepare to Commit](#prepare-to-commit)
+- [Make Commits](#make-commits)
+- [Move Between Branches](#move-between-branches)
+- [Diff Staged/Unstaged Changes](#diff-stagedunstaged-changes)
+- [Diff Commits](#diff-commits)
+- [Discard Changes](#discard-changes)
+- [Edit History](#edit-history)
+- [Code Archaeology](#code-archaeology)
+- [Combine Diverged Branches](#combine-diverged-branches)
+- [Restore an Old File](#restore-an-old-file)
+- [Add a Remote](#add-a-remote)
+- [Push Changes](#push-changes)
+- [Pull Changes](#pull-changes)
+- [Configure Git](#configure-git)
+- [Important Files](#important-files)
+
+---
+
 ## Getting Started
 
 | Command           | Discription            |
@@ -218,7 +239,3 @@ git cherry-pick <commit>
 | `.git/config`  | Local git config        |
 | `~/.gitconfig` | Global git config       |
 | `.gitignore`   | List of files to ignore |
-
----
-
-## Notes
