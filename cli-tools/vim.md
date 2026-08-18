@@ -1,5 +1,17 @@
 # Vim Cheat Sheet
 
+**Table of contents**
+
+- [Mode](#mode)
+- [Navigate](#navigate)
+- [Edit](#edit)
+- [Search](#search)
+- [Substitute / Replace](#substitute--replace)
+- [Patterns](#patterns)
+- [Exit](#exit)
+- [Commands](#commands)
+- [Help](#help)
+
 ## Mode
 
 | Command                      | Use                                                       |
