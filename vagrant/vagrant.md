@@ -1,8 +1,22 @@
 # Vagrant cheat sheet
 
+**Table of contents**
+
+- [Creating a VM](#creating-a-vm)
+- [Starting a VM](#starting-a-vm)
+- [Getting into a VM](#getting-into-a-vm)
+- [Stopping a VM](#stopping-a-vm)
+- [Cleaning Up a VM](#cleaning-up-a-vm)
+- [Boxes](#boxes)
+- [Saving Progress](#saving-progress)
+- [Tips](#tips)
+- [Notes](#notes)
+
 Typing `vagrant` from the command line will display a list of all available commands.
 
 Be sure that you are in the same directory as the Vagrantfile when running these commands!
+
+---
 
 ## Creating a VM
 
